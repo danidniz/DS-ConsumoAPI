@@ -27,18 +27,6 @@ API usada: https://www.canalti.com.br/api/pokemons.json
         echo $tipo . " ";
         } 
         
-PARA CONSULTAR O JSON: 
-$variavelUM = file_get_contents('CAMINHO PARA API');
-PARA TRANSFORMAR EM ARRAY:
-$variavelDOIS = json_decode($variavel1, true);
 
-Para a interação com meu usuário, a informação que ele digitar no index, vai vir dentro do método POST (Você também pode usar o GET, mas o POST é mais seguro) 
-VERIFICANDO SE TROUXE ALGO NO POST: 
-    if (isset($_POST['NOME DO CAMPO QUE O USUÁRIO VAI DIGITAR A INFORMAÇÃO']) && !empty($_POST['NOME DO CAMPO QUE O USUÁRIO VAI DIGITAR A INFORMAÇÃO'])) {
-    ~Acima ele dá uma condição: Caso a minha variável (&_POST) estiver definida e diferente de vazia, então faça algo para mim~
-    
-Pegando o POST se existir.
-    $variavelTRES = ucfirst(mb_strtolower($_POST['nome']));
-    
 
 
